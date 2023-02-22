@@ -1,7 +1,9 @@
 package textadventureitems;
 
 public class Goblin extends Enemy {
-    public Goblin (int health, int attack) {
+    private int agility;
+    public Goblin (int health, int attack, int agility) {
         super(health, attack);
+        this.agility = agility;
     }
 }

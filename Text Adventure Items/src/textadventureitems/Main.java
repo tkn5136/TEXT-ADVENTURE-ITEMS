@@ -13,7 +13,14 @@ public class Main {
         Enemy fastZombie = new Zombie(40, 3);
         Enemy spotDog = new Dog(30, 2);
         Enemy GiantSpider = new GiantSpider(50, 3);
-        Enemy Goblin = new Goblin(25, 3);
+        Enemy Goblin = new Goblin(25, 3, 10);
+        Action flee = new Flee();
+        Action viewInventory = new ViewInventory();
+        Action moveEast = new MoveEast();
+        Action moveNorth = new MoveNorth();
+        Action moveSouth = new MoveSouth();
+        Action moveWest = new MoveWest();
+        Action jump = new Jump();
 
         // code to use the objects in a text adventure game goes here
     }
