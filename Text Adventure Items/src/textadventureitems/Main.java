@@ -1,5 +1,5 @@
 package textadventureitems;
-
+import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         goldBar goldBar = new goldBar(500);
@@ -21,6 +21,17 @@ public class Main {
         Action moveSouth = new MoveSouth();
         Action moveWest = new MoveWest();
         Action jump = new Jump();
+        World world = new World();
+        MapTile leaveCaveRoom = new MapTile(0, 0);
+        MapTile cyclopsRoom = new MapTile(0, 1);
+        MapTile emptyCavePath1 = new MapTile(0, 2);
+        MapTile emptyCavePath2 = new MapTile(1, 2);
+        MapTile treasureRoom1 = new MapTile(2, 2);
+        MapTile ogreRoom = new MapTile(0, 3);
+        MapTile treasureRoom2 = new MapTile(1, 3);
+        MapTile startingRoom = new MapTile(2, 3);
+        MapTile treasureRoom3 = new MapTile(3, 3);
+        MapTile findDaggerRoom = new MapTile(4, 3);
 
         // code to use the objects in a text adventure game goes here
     }
